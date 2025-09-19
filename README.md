@@ -5,6 +5,10 @@ feed.
 
 It does not currently display S-class messages from TD.
 
+This example is for the STOMP feeds provided through Network Rail's data
+feeds platform, and cannot be used for the Kafka versions of these feeds available
+via the Rail Data Marketplace.
+
 ## Setup (publicdatafeeds)
 You must [register an account](https://publicdatafeeds.networkrail.co.uk/ntrod/create-account)
 for the Network Rail data feeds.
