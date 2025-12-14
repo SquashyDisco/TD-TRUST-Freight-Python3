@@ -25,7 +25,7 @@ class Listener(stomp.ConnectionListener):
 
         if self.is_durable:
             # Acknowledging messages is important in client-individual mode
-            self._mq.ack(id=headers["ack"], subscription=headers["subscription"])
+            self._mq.ack(id=headers["message-id"], subscription=headers["subscription"])
 
         if "TRAIN_MVT_" in headers["destination"]:
             trust.print_trust_frame(parsed_body)
