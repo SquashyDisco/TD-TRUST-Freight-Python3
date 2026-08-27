@@ -1,10 +1,4 @@
-# Python3/stomp.py TD/TRUST demo script
-This is a short demonstration script which outputs C-class messages from
-Network Rail's TD feed, or basic information from the train movements
-feed.
-
-It does not currently display S-class messages from TD.
-
+# Python3/stomp.py TRUST script with formatting and *useful* results for wider projects...
 This example is for the STOMP feeds provided through Network Rail's data
 feeds platform, and cannot be used for the Kafka versions of these feeds available
 via the Rail Data Marketplace.
@@ -37,15 +31,8 @@ pip3 install -r requirements.txt
 
 ## Usage
 Open a terminal in your local copy of this repository
-
-```shell
-source venv/bin/activate
-
-# To show TD messages
-./main.py --td
-# To show TRUST messages
 ./main.py --trust
-```
+
 
 You should now see the printed messages in your terminal.
 
