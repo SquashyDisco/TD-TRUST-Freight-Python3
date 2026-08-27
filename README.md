@@ -3,7 +3,9 @@
 Outputs look like the following:
 
 42 6B36 PASS      19  UP     04303  1787871360000 0   ON TIME
+
 66 4M60 PASS       5  DOWN S 72021  1787871240000 12  LATE
+
 97 4M48 PASS       4  UP     35136  1787871240000 10  LATE
 
 And in order...
