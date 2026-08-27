@@ -1,7 +1,16 @@
 # Python3/stomp.py TRUST script with formatting and *useful* results for wider projects...
-This example is for the STOMP feeds provided through Network Rail's data
-feeds platform, and cannot be used for the Kafka versions of these feeds available
-via the Rail Data Marketplace.
+
+Outputs look like the following:
+
+42 6B36 PASS      19  UP     04303  1787871360000 0   ON TIME
+66 4M60 PASS       5  DOWN S 72021  1787871240000 12  LATE
+97 4M48 PASS       4  UP     35136  1787871240000 10  LATE
+
+And in order...
+
+TOC Initial, Headcode, Movement, Platform, Direction, Line, STANOX, UNIX Datetime, Variation and Early/Late flag.
+
+Export to CSV using >> filename.csv
 
 ## Setup (publicdatafeeds)
 You must [register an account](https://publicdatafeeds.networkrail.co.uk/ntrod/create-account)
