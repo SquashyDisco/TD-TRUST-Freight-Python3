@@ -26,7 +26,7 @@ def print_trust_frame(parsed):
         line = a["body"].get("line_ind"," ")
         
 
-        summary = "{} {} {:9s} {:3s} {:4s} {} {:<6s} {} {:3s} {}".format(
+        summary = "{}, {}, {:9s}, {:3s}, {:4s}, {}, {:<6s}, {}, {:3s}, {}".format(
             toc,
             body["train_id"][2:6],
             MESSAGES[a["header"]["msg_type"]], platform, direction, line, loc_stanox, actual_timestamp, lateness, variation_status)
